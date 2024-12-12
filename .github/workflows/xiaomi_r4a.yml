@@ -59,7 +59,7 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        cp $GITHUB_WORKSPACE/$PATCH_FILE $GITHUB_WORKSPACE/openwrt/target/linux/generic/pending-5.4/476-mtd-spi-nor-add-eon-en25q128.patch
+        cp $GITHUB_WORKSPACE/$PATCH_FILE $GITHUB_WORKSPACE/openwrt/target/linux/generic/pending-6.6/476-mtd-spi-nor-add-eon-en25q128.patch
 
     - name: Cache
       uses: klever1988/cachewrtbuild@main
